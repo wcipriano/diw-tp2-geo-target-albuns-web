@@ -1,0 +1,128 @@
+{
+  "albums": [
+    {
+      "id": 172,
+      "name": "Pink Floyd - Wish You Were Here (1975)",
+      "description": "Wish You Were Here é o nono álbum de estúdio da banda britânica de rock progressivo Pink Floyd, lançado em setembro de 1975. Ele foi gravado após numerosas sessões nos Estúdios Abbey Road, em Londres.",
+      "cover": "https://lh3.googleusercontent.com/pw/ADCreHc4iwUHNinldN-QSc-tc_E81z7LjFUJ1JviQ0zNEZAz_ecQvVgaGzQxdAR_YRVlL77JgZ5HgI2YxemVuGpBWq9vPa9rHEldaWBiK8ihBxIAuwnH5ouOif7yU_gumic1bl_UWoeS9hWDJcOIeM0pOZ70=w1100-h400-s-no-gm",
+      "location_name": "Denmark Street Studios",
+      "location_coordinates": [
+        -0.13626513829365286,
+        51.5146927867084
+      ],
+      "date": "1975-09-15"
+    },
+    {
+      "id": 173,
+      "name": "U2 - The Joshua Tree - 1987",
+      "description": "The Joshua Tree é o quinto álbum de estúdio da banda de rock irlandesa U2 e o mais impactante. Foi produzido por Daniel Lanois e Brian Eno, e foi lançado em 9 de março de 1987 pela Island Records.",
+      "cover": "https://lh3.googleusercontent.com/pw/ADCreHdb6h6fDMfg76YES3vFsDvgwwoJFYw21HtpuOsij-EMyYkQpg-VVYmPRx4uzAhz30-hEXeqGpWLmZtUb2k_E0cyZmWfO35_v85f89ZmuVWG3Xaq8F8QPYKijD_ZDYcaB9r2KjXGk3sDEOgHkWLH774s=w1100-h400-s-no-gm",
+      "location_name": "Jungle Studios",
+      "location_coordinates": [
+        -0.13461601039889354,
+        51.51416304088352
+      ],
+      "date": "1987-03-09"
+    },
+    {
+      "id": 199,
+      "name": "Teste w",
+      "description": "Album do tema 2.",
+      "cover": "https://lh3.googleusercontent.com/pw/ADCreHe2UAj7uFvxnSwil_RDWFHzQTV9LHfOfF-GpxNFjhpeMSr9F7rhwuNcEfzL5Es1tWKeDbhv-t5KyaJWgHlZBuD7LFn2xeRFW81dzXIWvl6khYItY-qgUc2UzYt2Eq6VAJXls1ks6Pgqn2WnxrLN2Va0=w1100-h400-s-no-gm",
+      "location_name": "Trident Studios",
+      "location_coordinates": [
+        -0.13607936726618328,
+        51.5121683903178
+      ],
+      "date": "1975-09-15"
+    },
+    {
+      "name": "Teste ADSSssssssssss",
+      "description": "teste aaaa.",
+      "cover": "https://lh3.googleusercontent.com/pw/ADCreHd0wMdAijb3cyJ2rKJysDO0pvd0a4TpwIVr6lfIbx4UNXxA4bzhp_bnbN2e3Bi7lhW_yNYuX6FZjtJKZfr-Uv821ZEvctgyv_OWe3WV55TTqktIEI6KYUWiYe_8Ab9e2cDggjr4SA-128ykx4wgVU5G=w1100-h700-s-no-gm",
+      "location_name": "The Pitch Room",
+      "location_coordinates": [
+        -0.13277338100912642,
+        51.51281433916185
+      ],
+      "date": "1975-09-15",
+      "id": 200
+    }
+  ],
+  "photos": [
+    {
+      "id": 1721,
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHeSFildb6OZRtICinO18JPA71TFls3udFuCvSKRlVuFuUf8T9P-3rxrbNhW0TM1weS7heg0-fTl5KKPA9Ir-lgQwDSQBuSkDan6DxWUIupt0woZmRR7hOwHxHJwzMT9bXe5H6H7psKOOTa-QlPzTXxd=w1740-h979-s-no-gm",
+      "description": "Trio Pink Floyd",
+      "albumId": 172
+    },
+    {
+      "id": 1722,
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHeSd3xmB-dUFbzRrF1YSjvlHCuELPl3p08LeuQE1Cuu7h3gTEoUWN_FW_jpX0bwMMJ28557OQiQo-YudcZ1DEiPhRUTi2XEvtiLa1dP1kCjbYfua04PuKH9565NJMAPL6J0A0deDLYCAkuWeNF77sUO=w1740-h979-s-no-gm",
+      "description": "Capa The Dark Side of the Moon",
+      "albumId": 172
+    },
+    {
+      "id": 1723,
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHfogPxi9JNlqFiksAM7G0s49GZMITmqe1K3JPs57X4LmRnrJv3JviKFI2WF36ANaZ2FbiuTB7GhXkdjZQWBobTsL4E-gkdf8dzI_2Q4SKN_6GYbP4D-4VsZ9WWlXJC9K3l07r3iRC25aEmM_BIipU8Q=w1740-h979-s-no-gm",
+      "description": "Momento relax e resenha do grupo no stúdio",
+      "albumId": 172
+    },
+    {
+      "id": 1724,
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHfD008Z3y8oqppeT4NZx3CyGiVpXbzcJ4I-3LRfqvULdyZ3dl9JrP0-b9e_R5REihjlIIjrARAJp24y6tzpQ-LHa-3tTcB80JSFQL6c58yBisrsSEz_a5hSCGP_2mWRIHpapBAR2evR-4WWWq5gWH72=w1200-h680-s-no-gm",
+      "description": "Foto divulgação do icônico disco Wish You Were Here",
+      "albumId": 172
+    },
+    {
+      "id": 1725,
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHdcW7CpwOV5lTpcxexclBQGx5SnB9umzclVh2VIIIkXOHdp2Y-QdcAYgtFTKSNdnXPc6madCvP8YCkRRX62zxqzq6-61x2NXvzwHnp2SCTZ4xU2_ri-Ev2yciymNtQGEkcjuj8IxUT0pzxJ6dBs-93w=w1740-h979-s-no-gm",
+      "description": "Foto divulgação da turnê na América do Norte",
+      "albumId": 172
+    },
+    {
+      "id": 1726,
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHe49sN7OimvojxTWRxPLNW-Xf7z0QEITnClC0JPuw1q3dn6lsqy3ZOYrNEmIjfkaE2j0r6ByFKI5WmN4Wxg28qZbgJKd5ZZMgAavaXKWiOqsCVptBeEZDbpqfV7zb7CEzUfzgUys_FMVEczOqQUdbh0=w1740-h979-s-no-gm",
+      "description": "Animação comemorativa em alusão à capa do disco Wish You Were Here",
+      "albumId": 172
+    },
+    {
+      "id": 1727,
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHdXbglJ7q6Hng09QKVWlMxz9BOqsCWztvtVmpBni1Z9_b-Nk29Hsz6LWeTGbA-p9WfYWnounx4RhJW3rmVxFXBtgq7oR9ljsRNTBuxHAZy3c8Kvbaf-rb7VGo-d_Mku2Zj_rHGRNZdIm0O58mIX2j0O=w1740-h979-s-no-gm",
+      "description": "Capa comemorativa 50 anos \"The Dark Side of the Moon\"",
+      "albumId": 172
+    },
+    {
+      "id": 1731,
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHdXek6NJguo1JPxR0EnpxtWDySVzXEyX6FFI6Mzp6b5HzYCkgINOcbYyZu_S1QRnaIu6w9c1fhOGluO0LfiQfjQqy28Qjp905N3NFN9rylpmZONvvGzto2_erRLeQm8p0IL6L02PeEpYv8zidwEOVvS=w1024-h789-s-no-gm",
+      "description": "Foto de divulgação do álbum",
+      "albumId": 173
+    },
+    {
+      "id": 1732,
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHdc8l-72Yo9RVu1abH_BmK8yFrp0CY3ue7NTm3qy6L8-vw5WPn9MfSsFnYlD83djn22ZdZokd_1JC7Kw3d7y0oajhKqDI7EXZDWgYkj-8mCQ19KHDfCE2__JDMVj-69J8EJ_F5uJBxqK2QUjeC4euEG=w1000-h563-s-no-gm",
+      "description": "Foto mais recebte comemorativa de 30 anos do álbum",
+      "albumId": 173
+    },
+    {
+      "id": 1733,
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHeSFildb6OZRtICinO18JPA71TFls3udFuCvSKRlVuFuUf8T9P-3rxrbNhW0TM1weS7heg0-fTl5KKPA9Ir-lgQwDSQBuSkDan6DxWUIupt0woZmRR7hOwHxHJwzMT9bXe5H6H7psKOOTa-QlPzTXxd=w1740-h979-s-no-gm",
+      "description": "Foto teste album U2",
+      "albumId": 173
+    }
+  ],
+  "highlights": [
+    {
+      "id": 1,
+      "albumId": 172
+    },
+    {
+      "id": 2,
+      "albumId": 173
+    },
+    {
+      "id": 3,
+      "albumId": 199
+    }
+  ]
+}
