@@ -24,7 +24,6 @@ function get_albuns() {
     .then((json) => {
       let html_cards = "";
       json.forEach((item) => {
-        console.log(item);
         html_cards += build_card(item);
       });
       let ac = document.getElementById("albun-container");

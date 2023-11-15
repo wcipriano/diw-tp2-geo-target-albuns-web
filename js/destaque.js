@@ -18,7 +18,9 @@ function get_destaques() {
         active = i == 0 ? ' class="active" aria-current="true"' : "";
         html_indic += `<button type="button" data-bs-target="#carouselInd" data-bs-slide-to="${i}"${active}></button>`;
         html_items += `
-          <div class="carousel-item ${active != "" ? "active" : ""}">
+          <div id="carousel-item-home" class="carousel-item ${
+            active != "" ? "active" : ""
+          }">
             <a href="./detalhe_album.html?id=${album.id}">
               <img src="${album.cover}" class="d-block w-100" alt="${
           album.name

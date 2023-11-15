@@ -11,8 +11,7 @@ function addMarker(map, label, url, coordenadas) {
 
 function get_map() {
   // Defini o ponto central do mapa
-  // const centralLatLong = [-0.20440732766553993, 51.51529792235509];
-  const centralLatLong = [-0.13628966599153391, 51.51351222276165];
+  const centralLatLong = [-0.13628966599153391, 51.519];
 
   // ----------------------------------------------
   // Utilize sua accessToken trocando o valor na linha abaixo
@@ -25,7 +24,7 @@ function get_map() {
     container: "map",
     style: "mapbox://styles/mapbox/streets-v12",
     center: centralLatLong,
-    zoom: 14,
+    zoom: 11,
   });
   return map;
 }
