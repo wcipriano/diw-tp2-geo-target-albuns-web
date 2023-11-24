@@ -1,7 +1,7 @@
 function build_card(album) {
   const html = `
   <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2">
-    <a class="text-decoration-none text-reset" href="./detalhe_album.html?${album.id}">
+    <a class="text-decoration-none text-reset" href="./detalhe_album.html?id=${album.id}">
       <div class="card">
         <img src="${album.cover}" class="card-img-top" alt="${album.name}">
         <div class="card-body">
