@@ -24,7 +24,7 @@ function set_destaque(highlights) {
 }
 
 function add_destaque() {
-  const idAlbum = parseInt(get_id());
+  const idAlbum = get_id();
   const url = `${urlBase}/highlights`;
   const data = { albumId: idAlbum };
   const request = {
@@ -57,8 +57,7 @@ function update_destaque(elem) {
   if (!resp) elem.checked = !elem.checked;
 }
 
-function get_album_data() {
-  const idAlbum = get_id();
+function get_album_data(idAlbum) {
   const url = `${urlBase}/albums/${idAlbum}?_embed=highlights`;
   fetch(url)
     .then((response) => {
@@ -81,11 +80,11 @@ function get_html_foto(foto) {
   const html = `
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2">
       <a class="text-decoration-none" href="https://www.facebook.com/ciprianowagner/" type="button"
-        data-bs-toggle="modal" data-bs-target="#modal-fotos">
+        data-bs-toggle="modal" data-bs-target="#modal-fotos" onclick="set_foto(${foto.id})">
         <div class="card">
           <img src="${foto.image}" class="card-img-top" alt="imagem card 1">
           <div class="card-body">
-            <small class="card-text">${foto.description}</small>
+            <small class="card-text line-clamp-3">${foto.description}</small>
           </div>
         </div>
       </a>
@@ -94,8 +93,7 @@ function get_html_foto(foto) {
   return html;
 }
 
-function get_fotos() {
-  const idAlbum = get_id();
+function get_fotos(idAlbum) {
   const url = `${urlBase}/photos?albumId=${idAlbum}&`;
   fetch(url)
     .then((response) => {
@@ -111,6 +109,15 @@ function get_fotos() {
         html = `<div class="alert alert-light" role="alert">Nenhuma foto disponível</div>`;
       container.innerHTML = html;
     });
+}
+
+function set_foto(id) {
+  //carrega a foto correta para visualização na galeria (a foto clicada)
+  const foto_list = document.getElementsByClassName("carousel-item-home");
+  for (let i = 0; i < foto_list.length; i++) {
+    foto_list[i].classList.remove("active");
+  }
+  document.getElementById(`carousel-item-${id}`).classList.add("active");
 }
 
 function slide_change(e) {
@@ -131,6 +138,9 @@ window.addEventListener("keydown", (e) => {
 });
 
 window.addEventListener("load", () => {
-  get_album_data();
-  get_fotos();
+  const idAlbum = get_id();
+  get_album_data(idAlbum);
+  get_fotos(idAlbum);
+  const url = `${urlBase}/photos?albumId=${idAlbum}&`;
+  get_carousel(url);
 });

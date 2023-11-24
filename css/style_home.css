@@ -25,7 +25,7 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
-  #carousel-item-home {
+  .carousel-item-home {
     height: 350px;
   }
 }

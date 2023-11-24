@@ -8,7 +8,7 @@
   <title>My Albums</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_detalhe.css">
 </head>
 
 <body>
@@ -26,16 +26,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Destaques</a>
+              <a class="nav-link" href="#destaques">Destaques</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./detalhe_album.html">Mapa mídia georeferenciada</a>
+              <a class="nav-link" href="#mapa">Mapa mídia georeferenciada</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Albuns</a>
+              <a class="nav-link" href="#albuns">Albuns</a>
             </li>
           </ul>
         </div>
@@ -100,53 +100,16 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                aria-label="Slide 7"></button>
+          <div id="carouselInd" class="carousel slide" data-bs-ride="carousel">
+            <div id="destaques-indicators" class="carousel-indicators">
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="imgs/fotos/pink_floyd/afoto1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imgs/fotos/pink_floyd/afoto2.jpeg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imgs/fotos/pink_floyd/afoto3.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imgs/fotos/pink_floyd/afoto4.webp" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imgs/fotos/pink_floyd/afoto5.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imgs/fotos/pink_floyd/afoto6.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="imgs/fotos/pink_floyd/afoto7.png" class="d-block w-100" alt="...">
-              </div>
+            <div id="destaques-items" class="carousel-inner">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselInd" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselInd" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -154,6 +117,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 
 
@@ -222,6 +186,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script src="js/galeria.js"></script>
   <script src="js/detalhe.js"></script>
 </body>
 

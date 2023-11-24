@@ -1,0 +1,10 @@
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+main {
+  margin-top: 110px;
+}
