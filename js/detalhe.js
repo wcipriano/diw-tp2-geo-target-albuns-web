@@ -113,6 +113,23 @@ function get_fotos() {
     });
 }
 
+function slide_change(e) {
+  if (e.keyCode === 37) {
+    // Previous
+    document.getElementsByClassName("carousel-control-prev")[0]?.click();
+    return false;
+  }
+  if (e.keyCode === 39) {
+    // Next
+    document.getElementsByClassName("carousel-control-next")[0]?.click();
+    return false;
+  }
+}
+
+window.addEventListener("keydown", (e) => {
+  slide_change(e);
+});
+
 window.addEventListener("load", () => {
   get_album_data();
   get_fotos();
