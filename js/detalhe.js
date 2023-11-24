@@ -107,6 +107,8 @@ function get_fotos() {
       array_data.forEach((item) => {
         html += get_html_foto(item);
       });
+      if (!html)
+        html = `<div class="alert alert-light" role="alert">Nenhuma foto disponível</div>`;
       container.innerHTML = html;
     });
 }

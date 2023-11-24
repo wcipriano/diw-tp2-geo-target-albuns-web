@@ -68,14 +68,12 @@
                   </p>
                 </div>
                 <div class="col-md-3 mt-2">
-                  <h2 class="fs-6 fw-bold">Data Registro:</h2>
-                  <small id="album_date">...</small>
+                  <h2 class="fs-6 fw-bold">Data:</h2>
+                  <p><small id="album_date">...</small></p>
                 </div>
                 <div class="col-md-3 mt-2">
                   <h2 class="fs-6 fw-bold">Destaque:</h2>
-                  <small>
-                    <input type="checkbox" id="album_destaque" onchange="update_destaque(this);">
-                  </small>
+                  <input type="checkbox" id="album_destaque" onchange="update_destaque(this);">
                 </div>
               </div>
             </div>
@@ -86,7 +84,7 @@
       <div class="row mt-4">
         <h1 class="fs-3">Itens (fotos e vídeos)</h1>
         <div class="container-fluid">
-          <div id="album_container_foto" class="row gy-4"> <!-- gap-1 -->
+          <div id="album_container_foto" class="row gy-4 mx-0"> <!-- gap-1 -->
           </div>
         </div>
       </div>
@@ -160,7 +158,7 @@
   </div>
 
 
-  <footer class="container mt-5">
+  <footer class="ps-3 footer bg-body-tertiary container-fluid mt-4">
     <h1 class="fs-3">Créditos</h1>
     <div class="row mt-3 mb-3">
       <div class="col-md-7 mb-3">
