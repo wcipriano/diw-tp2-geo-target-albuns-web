@@ -15,22 +15,11 @@ function build_card(album) {
   return html;
 }
 
-function get_albuns() {
-  const url = "https://api-albuns.wagnercipriano.repl.co/albums";
-  fetch(url)
-    .then((response) => {
-      return response.json();
-    })
-    .then((json) => {
-      let html_cards = "";
-      json.forEach((item) => {
-        html_cards += build_card(item);
-      });
-      let ac = document.getElementById("albun-container");
-      ac.innerHTML = html_cards;
-    });
+function album_render(json) {
+  let html_cards = "";
+  json.forEach((item) => {
+    html_cards += build_card(item);
+  });
+  let ac = document.getElementById("albun-container");
+  ac.innerHTML = html_cards;
 }
-
-window.addEventListener("load", (ev) => {
-  get_albuns();
-});

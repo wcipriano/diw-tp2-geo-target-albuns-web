@@ -40,26 +40,15 @@ function get_card_marker(album) {
     </a>`;
 }
 
-function get_locations(map) {
-  const url = "https://api-albuns.wagnercipriano.repl.co/albums";
-  fetch(url)
-    .then((response) => {
-      return response.json();
-    })
-    .then((array_data) => {
-      array_data.forEach((item) => {
-        var popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
-          get_card_marker(item)
-        );
-        const marker = new mapboxgl.Marker({ color: "blue" })
-          .setLngLat(item.location_coordinates)
-          .setPopup(popup)
-          .addTo(map);
-      });
-    });
-}
-
-window.addEventListener("load", (ev) => {
+function map_render(array_data) {
   const map = get_map();
-  get_locations(map);
-});
+  array_data.forEach((item) => {
+    var popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
+      get_card_marker(item)
+    );
+    const marker = new mapboxgl.Marker({ color: "blue" })
+      .setLngLat(item.location_coordinates)
+      .setPopup(popup)
+      .addTo(map);
+  });
+}

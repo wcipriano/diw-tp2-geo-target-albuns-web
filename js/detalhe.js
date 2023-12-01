@@ -1,4 +1,3 @@
-const urlBase = "https://api-albuns.wagnercipriano.repl.co";
 let idDestaque = null;
 
 function get_id() {
@@ -24,7 +23,8 @@ function set_destaque(highlights) {
 }
 
 function add_destaque() {
-  const idAlbum = get_id();
+  const idAlbum = parseInt(get_id());
+  if (!idAlbum) return;
   const url = `${urlBase}/highlights`;
   const data = { albumId: idAlbum };
   const request = {
@@ -57,23 +57,16 @@ function update_destaque(elem) {
   if (!resp) elem.checked = !elem.checked;
 }
 
-function get_album_data(idAlbum) {
-  const url = `${urlBase}/albums/${idAlbum}?_embed=highlights`;
-  fetch(url)
-    .then((response) => {
-      return response.json();
-    })
-    .then((album) => {
-      //Set name, desc, location, date
-      set_html("album_name", album.name);
-      set_html("album_desc", album.description);
-      set_html("album_location", album.location_name);
-      set_html("album_date", album.date);
-      //set cover
-      set_html("album_container_capa", album.cover, album.name);
-      //set destaque
-      set_destaque(album.highlights);
-    });
+function get_album_data(album) {
+  //Set name, desc, location, date
+  set_html("album_name", album.name);
+  set_html("album_desc", album.description);
+  set_html("album_location", album.location_name);
+  set_html("album_date", album.date);
+  //set cover
+  set_html("album_container_capa", album.cover, album.name);
+  //set destaque
+  set_destaque(album.highlights);
 }
 
 function get_html_foto(foto) {
@@ -93,22 +86,15 @@ function get_html_foto(foto) {
   return html;
 }
 
-function get_fotos(idAlbum) {
-  const url = `${urlBase}/photos?albumId=${idAlbum}&`;
-  fetch(url)
-    .then((response) => {
-      return response.json();
-    })
-    .then((array_data) => {
-      const container = document.getElementById("album_container_foto");
-      let html = "";
-      array_data.forEach((item) => {
-        html += get_html_foto(item);
-      });
-      if (!html)
-        html = `<div class="alert alert-light" role="alert">Nenhuma foto disponível</div>`;
-      container.innerHTML = html;
-    });
+function photos_render(array_data) {
+  const container = document.getElementById("album_container_foto");
+  let html = "";
+  array_data.forEach((item) => {
+    html += get_html_foto(item);
+  });
+  if (!html)
+    html = `<div class="alert alert-light" role="alert">Nenhuma foto disponível</div>`;
+  container.innerHTML = html;
 }
 
 function set_foto(id) {
@@ -139,8 +125,13 @@ window.addEventListener("keydown", (e) => {
 
 window.addEventListener("load", () => {
   const idAlbum = get_id();
-  get_album_data(idAlbum);
-  get_fotos(idAlbum);
-  const url = `${urlBase}/photos?albumId=${idAlbum}&`;
-  get_carousel(url);
+
+  get_album(idAlbum).then((json) => {
+    // Album data render
+    get_album_data(json);
+    // Photo galery render
+    photos_render(json.photos);
+    // Carousel render
+    carousel_render(json.photos);
+  });
 });
